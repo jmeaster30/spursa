@@ -7,7 +7,7 @@
 ## What is this??
 **spursa** is a library that generates ASPnet route controllers from a YAML specification. 
 
-I created this because I didn't like writing the route controller boiler plate at work. This likely is not sophisticated enough to be used in production.
+I created this because I didn't like writing the route controller boilerplate at work. This likely is not sophisticated enough to be used in production.
 
 I also thought it would be neat to learn how to do code generation in C#.
 
