@@ -1,0 +1,18 @@
+- name: AnotherController
+  namespace: ShowCase
+  service: AnotherService
+  basePath: /yeah
+  routes:
+    - path: boy
+      get:
+        parameters:
+          - name: woah
+            type: string
+        result: string
+        method: ReverseString
+      put:
+        parameters:
+          - name: How
+            type: ModelModel
+        result: ModelModel
+        method: WhatTheHeck

@@ -1,0 +1,46 @@
+- name: TestController
+  basePath: /
+  namespace: ShowCase
+  service: TestService
+  routes:
+    - path: test
+      get:
+        parameters:
+          - name: id
+            type: int
+        result: MyTestObject
+        method: GetTest
+      post:
+        parameters:
+          - name: model
+            type: MyTestObject
+        result: void
+        method: UpdateTestModel
+    - path: sum
+      get:
+        parameters:
+          - name: a
+            type: int
+          - name: b
+            type: int
+        result: int
+        method: Sum
+- name: Test2Controller
+  basePath: /part2
+  namespace: ShowCase
+  service: TestService2
+  routes:
+    - path: woah
+      get:
+        parameters:
+          - name: woahId
+            type: int
+        result: WoahModel
+        method: GetWoahModel
+      delete:
+        parameters:
+          - name: woahId
+            type: int
+        result: void
+        method: DeleteWoahModel
+        

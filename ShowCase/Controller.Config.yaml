@@ -1,0 +1,7 @@
+attributes:
+  - Authorize
+  - ApiController
+  - AutoValidateAntiforgeryToken
+controllers:
+  - TestController
+  - AnotherController
